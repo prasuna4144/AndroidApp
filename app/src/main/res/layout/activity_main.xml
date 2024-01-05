@@ -9,18 +9,19 @@
     app:barrierMargin="10dp"
     tools:context=".MainActivity">
 
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/searchviewshape"
         android:iconifiedByDefault="false"
         android:queryHint="Search For A City"
         android:searchIcon="@drawable/search"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/textview" />
 
@@ -82,8 +83,8 @@
     <TextView
 
         android:id="@+id/minTemp"
-        android:layout_width="85dp"
-        android:layout_height="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Min:00:00°C"
         android:textAlignment="center"
@@ -97,12 +98,12 @@
         android:id="@+id/cityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/loctaion"
         android:drawablePadding="15dp"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <TextView
@@ -388,11 +389,12 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Design By \n Neat Roots"
+        android:text="Design By \n prasuna"
         android:textColor="#FAF5F5"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="786dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="762dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
